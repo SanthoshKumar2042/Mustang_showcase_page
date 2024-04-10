@@ -1,0 +1,116 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Registration</title>-->
+<!--    <link rel="stylesheet" href="/static/style3.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="container">-->
+<!--    <form>-->
+<!--        {% block content %}-->
+<!--        {% csrf_token %}-->
+<!--        <h3>Registration</h3>-->
+<!--        <table>-->
+<!--            <tr>-->
+<!--                <td>User Name:</td>-->
+<!--                <td><input type="text" placeholder="Enter your Name"></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Password:</td>-->
+<!--                <td><input type="password" placeholder="Enter your password"></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td colspan="2" class="buttons"><input type="submit" value="Submit"></td>-->
+<!--            </tr>-->
+<!--        </table>-->
+<!--        {%  endblock %}-->
+<!--    </form>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <style>
+        {% if error %}
+    <p>{{ error }}</p>
+{% endif %}
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-box {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h3 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 10px;
+        }
+        .buttons {
+            text-align: center;
+        }
+        .signup-btn, .login-btn {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .signup-btn:hover, .login-btn:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<!--        <form action="/signup/" method="post">-->
+<!--        {% csrf_token %}-->
+    <div class="form-box">
+        <form action="/signin/" method="post">
+            {% csrf_token %}
+            <h3>Registration</h3>
+            <table>
+                <tr>
+                    <td>User Name:</td>
+                    <td><input type="text" placeholder="Enter your Name" name="username"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" placeholder="Enter your Email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" placeholder="Enter your password" name="password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="buttons">
+                        <button type="submit" class="signup-btn">Sign Up</button>
+                        <button type="button" class="login-btn" onclick="location.href='/login/'"><a href="/studentapp/signin">Login</a></button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,165 @@
+
+nav{
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+}
+li,h1,ul{
+    display: inline;
+}
+
+ul{
+    margin-left:60%;
+}
+li{
+    color: white;
+    cursor: pointer;
+}
+li:hover{
+    color: aliceblue;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Center align headings and paragraphs with margin 20px */
+h1, h3, p {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for car divs */
+.Car {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    margin: 10px;
+    width: calc(33.33% - 40px); /* 33.33% width with 20px margin on both sides */
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-flex; /* Changed to inline-flex */
+    flex-direction: column; /* Align children vertically */
+    align-items: stretch; /* Make all items in the container stretch to the same height */
+}
+
+.Car img {
+    width: 100%; /* Make the width 100% of the parent container */
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio and cover entire container */
+}
+
+/* Hover effect for car divs */
+.Car:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Media query for 800px width */
+@media (max-width: 800px) {
+    .Car {
+        width: calc(50% - 40px); /* 50% width with 20px margin on both sides */
+    }
+}
+
+/* Media query for 400px width */
+@media (max-width: 400px) {
+    .Car {
+        width: calc(100% - 40px); /* 100% width with 20px margin on both sides */
+    }
+}
+
+
+nav{
+    background-color: black;
+    color: aliceblue;
+    padding: 40px;
+}
+li,h1,ul{
+    display: inline;
+}
+
+ul{
+    margin-left:60%;
+}
+li{
+    color: white;
+    cursor: pointer;
+}
+li:hover{
+    color: aliceblue;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Center align headings and paragraphs with margin 20px */
+h1,h2, p {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for car divs */
+.Car {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    margin: 10px;
+    width: calc(33.33% - 40px); /* 33.33% width with 20px margin on both sides */
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-flex; /* Changed to inline-flex */
+    flex-direction: column; /* Align children vertically */
+    align-items: stretch; /* Make all items in the container stretch to the same height */
+}
+
+.Car img {
+    width: 100%; /* Make the width 100% of the parent container */
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio and cover entire container */
+}
+
+/* Hover effect for car divs */
+.Car:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Media query for 800px width */
+@media (max-width: 800px) {
+    .Car {
+        width: calc(50% - 40px); /* 50% width with 20px margin on both sides */
+    }
+}
+
+/* Media query for 400px width */
+@media (max-width: 400px) {
+    .Car {
+        width: calc(100% - 40px); /* 100% width with 20px margin on both sides */
+    }
+}

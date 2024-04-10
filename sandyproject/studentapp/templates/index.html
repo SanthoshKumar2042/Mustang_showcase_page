@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSTANG</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <h1>Mustang GT500</h1>
+            <ul>
+                <li><a href="/studentapp/home/">Home |</a></li>
+                <li><a href="/studentapp/users/">Mustang GT |</a></li>
+                <li><a href="/studentapp/contact/"> Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="searchbar">
+        <input placeholder="Search">
+    </div>
+
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" id="radio1" name="radios">
+            <input type="radio" id="radio2" name="radios">
+            <input type="radio" id="radio3" name="radios">
+            <input type="radio" id="radio4" name="radios">
+            <div class="slide first">
+                <img src="/static/01gt.jpg">
+            </div>
+            <div class="slide">
+                <img src="/static/02gt.jpg">
+            </div>
+            <div class="slide">
+                <img src="/static/03gt.jpg">
+            </div>
+            <div class="slide">
+                <img src="/static/04gt.jpeg">
+            </div>
+
+            <div class="auto">
+                <div class="auto1"></div>
+                <div class="auto2"></div>
+                <div class="auto3"></div>
+                <div class="auto4"></div>
+            </div>
+        </div>
+        <div class="manual">
+            <label for="radio1" class="manuals"></label>
+            <label for="radio2" class="manuals"></label>
+            <label for="radio3" class="manuals"></label>
+            <label for="radio4" class="manuals"></label>
+        </div>
+
+    </div>
+    <div class="products">
+        <div class="box">
+            <p>The Ford Mustang is a series of American automobiles manufactured by Ford. In continuous production since 1964, the Mustang is currently the longest-produced Ford car nameplate. Currently in its seventh generation, it is the fifth-best selling Ford car nameplate. The namesake of the "pony car" automobile segment, the Mustang was developed as a highly styled line of sporty coupes and convertibles derived from existing model lines, initially distinguished by "long hood, short deck" proportions.</p><br>
+            <p>Originally predicted to sell 100,000 vehicles yearly, the 1965 Mustang became the most successful vehicle launch since the 1927 Model A.[4] Introduced on April 17, 1964[5] (16 days after the Plymouth Barracuda), over 400,000 units were sold in its first year; the one-millionth Mustang was sold within two years of its launch.[6] In August 2018, Ford produced the 10-millionth Mustang; matching the first 1965 Mustang, the vehicle was a 2019 Wimbledon White convertible with a V8 engine</p><br>
+            <p>The success of the Mustang launch led to multiple competitors from other American manufacturers, including the Chevrolet Camaro and Pontiac Firebird[8] (1967), AMC Javelin (1968), and Dodge Challenger[9] (1970). It also competed with the Plymouth Barracuda, which was launched around the same time. The Mustang also had an effect on designs of coupes worldwide, leading to the marketing of the Toyota Celica and Ford Capri in the United States (the latter, by Lincoln-Mercury). The Mercury Cougar was launched in 1967 as a unique-bodied higher-trim alternative to the Mustang; during the 1970s, it included more features and was marketed as a personal luxury car</p>
+            <br>
+        <img src="/static/iconlogo.jpeg" height="200" width="350">
+        </div>
+    </div>
+    <div class="about">
+        <h1 style="text-align: center;">About Us</h1>
+        <p>Greetings! I'm SANDY, a passionate web developer with a penchant for Python and Django. My journey into the world of coding began at Fita Academy in Anna Nagar, where I immersed myself in learning the intricacies of these powerful technologies. With a firm foundation and a drive for continuous improvement, I embarked on a mission to carve my niche in the vast realm of web development.</p>
+    </div>
+    <div class="Contact">
+        <h4>Contact</h4><br>
+        <p>+91 6382227536</p>
+        <p>santhoshkumar.m0911@gmail.com</p>
+        <p style="margin-top: 30px; font-size: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis in id velit exercitationem, ratione culpa repudiandae ipsam sapiente iusto</p>
+
+    </div>
+
+    <script>
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter = counter + 1;
+            if(counter>4){
+                counter = 1;
+            }
+        },3000);
+    </script>
+</body>
+</html>
